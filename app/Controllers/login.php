@@ -87,7 +87,7 @@ class Login extends BaseController
 
                 $currentDateTime = new \DateTime();
 
-                $interval = new \DateInterval('PT10S');
+                $interval = new \DateInterval('PT10M');
                 $currentDateTime->add($interval);
                 //Sole miamor  
                 $fechaAdelantada = $currentDateTime->format('Y-m-d H:i:s');

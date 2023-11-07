@@ -7,83 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual de Usuario - Ducha Automática Disertus</title>
     <style>
-    h1,
-    h2 {
-        color: #333;
-    }
+        h1,
+        h2 {
+            color: #333;
+        }
 
-    h2 {
-        margin-top: 20px;
-    }
+        h2 {
+            margin-top: 20px;
+        }
 
-    ol {
-        margin-bottom: 20px;
-    }
+        ol {
+            margin-bottom: 20px;
+        }
 
-    .cont-prin {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        max-width: 850px;
-        padding: 20px;
-        background-color: #F5F5F5;
-        margin-top: 70px;
-        padding-left: 50px;
-        margin-bottom: 70px;
-        box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.22);
-        -webkit-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.22);
-        -moz-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.22);
-    }
+        .cont-prin {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 850px;
+            padding: 20px;
+            background-color: #F5F5F5;
+            margin-top: 70px;
+            padding-left: 50px;
+            margin-bottom: 70px;
+            box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.22);
+            -webkit-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.22);
+            -moz-box-shadow: 10px 9px 5px 0px rgba(0, 0, 0, 0.22);
+        }
 
-    .contenedor {
-        display: flex;
-        justify-content: center;
-    }
+        .contenedor {
+            display: flex;
+            justify-content: center;
+        }
 
-    .cont-bienvenidos {
-        background-color: #FFFFFF;
-        margin: ;
-        width: 600px;
-        height: 150px;
-        border: 1px solid #009686;
-        border-radius: 7px;
-    }
+        .cont-bienvenidos {
+            background-color: #FFFFFF;
+            margin: ;
+            width: 600px;
+            height: 150px;
+            border: 1px solid #009686;
+            border-radius: 7px;
+        }
 
-    .cont-bienvenidos>h2 {
-        margin-left: 20px;
+        .cont-bienvenidos>h2 {
+            margin-left: 20px;
 
-    }
+        }
 
-    .cont-bienvenidos>p {
-        margin-left: 20px;
-    }
+        .cont-bienvenidos>p {
+            margin-left: 20px;
+        }
 
-    .linea {
-        width: 800px;
-        height: 1px;
-        background-color: #6C6C6C;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+        .linea {
+            width: 800px;
+            height: 1px;
+            background-color: #6C6C6C;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
 
-    .linea-2 {
-        width: 800px;
-        height: 1px;
-        background-color: #6C6C6C;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+        .linea-2 {
+            width: 800px;
+            height: 1px;
+            background-color: #6C6C6C;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
 
-    .linea-3 {
-        width: 800px;
-        height: 1px;
-        background-color: #6C6C6C;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
+        .linea-3 {
+            width: 800px;
+            height: 1px;
+            background-color: #6C6C6C;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
 
-    .text {
-        font-style: italic;
-    }
+        .text {
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -105,9 +105,7 @@
                 <div class="text">
                     <li>Enciende la ducha automática Disertus.</li>
                     <li>Desde tu dispositivo móvil o computadora, busca y selecciona la red Wi-Fi proporcionada por la
-                        ducha
-                        (por
-                        ejemplo, "Disertus_Ducha_XXXXXX").</li>
+                        ducha.</li>
                     <li>Introduce la contraseña de la red Wi-Fi (por defecto es "123456789").</li>
                     <li>Una vez conectado, abre tu navegador web y escribe la dirección IP de la ducha:
                         <code>http://192.168.4.1</code>
@@ -116,7 +114,23 @@
             </ol>
 
             <div class="linea"></div>
-            <h2>Paso 2: Configurar los Tiempos de la Ducha</h2>
+            <h2>Paso 2: Vincular tu Dispositivo a tu Usuario</h2>
+            <ol>
+                <div class="text">
+                    <li>Encuentra la etiqueta con la dirección MAC de la ducha. Esta es una serie de números y letras
+                        únicos
+                        para tu
+                        dispositivo. Se puede encontrar en el servidor web mencionado anteriormente</li>
+                    <li>Si no tienes una cuenta aun, puedes registrarte. Tendras que ingresar los datos personales
+                        requeridos, incluyendo la direccion MAC. Si ya tienes una cuenta podras hacerlo desde la página
+                        web, introduce tu dirección MAC en el campo designado y haz clic en "Vincular
+                        Dispositivo".
+                    </li>
+                    <li>Ahora, tu ducha está asociada a tu usuario y recordará tus preferencias de configuración.</li>
+                </div>
+            </ol>
+            <div class="linea-2"></div>
+            <h2>Paso 3: Configurar los Tiempos de la Ducha</h2>
             <ol>
                 <div class="text">
                     <li>En la página de configuración, encontrarás campos para personalizar los tiempos de la ducha:
@@ -138,26 +152,7 @@
                     </ul>
                 </div>
             </ol>
-            <?php 
-$variable1 = 10;
-$variable2 = 3;
-$calculo = $variable1/$variable2;
-echo $calculo;        
-        ?>
-            <div class="linea-2"></div>
-            <h2>Paso 3: Vincular tu Dispositivo a tu Usuario</h2>
-            <ol>
-                <div class="text">
-                    <li>Encuentra la etiqueta con la dirección MAC de la ducha. Esta es una serie de números y letras
-                        únicos
-                        para tu
-                        dispositivo.</li>
-                    <li>En la página web, introduce tu dirección MAC en el campo designado y haz clic en "Vincular
-                        Dispositivo".
-                    </li>
-                    <li>Ahora, tu ducha está asociada a tu usuario y recordará tus preferencias de configuración.</li>
-                </div>
-            </ol>
+
 
             <div class="linea-3"></div>
             <h2>Paso 4: Comenzar a Usar la Ducha Automática</h2>

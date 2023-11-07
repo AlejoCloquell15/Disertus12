@@ -8,11 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Nunito+Sans:opsz@6..12&family=Raleway:ital,wght@0,100;1,100;1,300&family=Ubuntu:ital,wght@1,300&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&family=Nunito+Sans:opsz@6..12&family=Raleway:ital,wght@0,100;1,100;1,300&family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,400&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Manual de Usuario - Ducha Automática Disertus</title>
     <style>
@@ -171,9 +168,7 @@
                 <div class="text">
                     <li>Enciende la ducha automática Disertus.</li>
                     <li>Desde tu dispositivo móvil o computadora, busca y selecciona la red Wi-Fi proporcionada por la
-                        ducha
-                        (por
-                        ejemplo, "Disertus_Ducha_XXXXXX").</li>
+                        ducha.</li>
                     <li>Introduce la contraseña de la red Wi-Fi (por defecto es "123456789").</li>
                     <li>Una vez conectado, abre tu navegador web y escribe la dirección IP de la ducha:
                         <code>http://192.168.4.1</code>
@@ -182,7 +177,23 @@
             </ol>
 
             <div class="linea"></div>
-            <h2>Paso 2: Configurar los Tiempos de la Ducha</h2>
+            <h2>Paso 2: Vincular tu Dispositivo a tu Usuario</h2>
+            <ol>
+                <div class="text">
+                    <li>Encuentra la etiqueta con la dirección MAC de la ducha. Esta es una serie de números y letras
+                        únicos
+                        para tu
+                        dispositivo. Se puede encontrar en el servidor web mencionado anteriormente</li>
+                    <li>Si no tienes una cuenta aun, puedes registrarte. Tendras que ingresar los datos personales
+                        requeridos, incluyendo la direccion MAC. Si ya tienes una cuenta podras hacerlo desde la página
+                        web, introduce tu dirección MAC en el campo designado y haz clic en "Vincular
+                        Dispositivo".
+                    </li>
+                    <li>Ahora, tu ducha está asociada a tu usuario y recordará tus preferencias de configuración.</li>
+                </div>
+            </ol>
+            <div class="linea-2"></div>
+            <h2>Paso 3: Configurar los Tiempos de la Ducha</h2>
             <ol>
                 <div class="text">
                     <li>En la página de configuración, encontrarás campos para personalizar los tiempos de la ducha:
@@ -205,20 +216,6 @@
                 </div>
             </ol>
 
-            <div class="linea-2"></div>
-            <h2>Paso 3: Vincular tu Dispositivo a tu Usuario</h2>
-            <ol>
-                <div class="text">
-                    <li>Encuentra la etiqueta con la dirección MAC de la ducha. Esta es una serie de números y letras
-                        únicos
-                        para tu
-                        dispositivo.</li>
-                    <li>En la página web, introduce tu dirección MAC en el campo designado y haz clic en "Vincular
-                        Dispositivo".
-                    </li>
-                    <li>Ahora, tu ducha está asociada a tu usuario y recordará tus preferencias de configuración.</li>
-                </div>
-            </ol>
 
             <div class="linea-3"></div>
             <h2>Paso 4: Comenzar a Usar la Ducha Automática</h2>
