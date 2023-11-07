@@ -1,0 +1,788 @@
+INFO - 2023-11-05 00:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-05 00:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-05 00:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-05 21:59:59 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 21:59:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:03 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:03 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:08 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:13 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:17 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:21 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:26 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:30 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:30 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:34 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:38 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:42 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:42 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:47 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:51 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:00:51 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:00:55 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#4 C:\xampp\htdocs\Disertus\app\Models\caudalModelo.php(191): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(43): App\Models\CaudalModelo->insertarCaudal(Array)
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirCaudalimetro()
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#8 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ca...', Array, false)
+#3 C:\xampp\htdocs\Disertus\app\Models\caudalModelo.php(191): CodeIgniter\Database\BaseBuilder->insert(Array)
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(43): App\Models\CaudalModelo->insertarCaudal(Array)
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirCaudalimetro()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-11-05 22:00:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `caudal` (`Caudal`, `IdNodemcu`) VALUES (:Caudal:, :IdNodemcu:)', [...], false)
+ 3 APPPATH\Models\caudalModelo.php(191): CodeIgniter\Database\BaseBuilder->insert([...])
+ 4 APPPATH\Controllers\recibirNodemcu.php(43): App\Models\CaudalModelo->insertarCaudal([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirCaudalimetro()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:00 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:04 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:04 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:08 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:12 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:17 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:21 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:25 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:29 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:29 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-11-05 22:01:34 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'disertus', 3306, '', 0)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#4 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#7 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\Disertus\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Disertus\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Disertus\app\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDu...')
+#3 C:\xampp\htdocs\Disertus\app\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+#4 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+#5 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+#6 C:\xampp\htdocs\Disertus\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\Disertus\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2023-11-05 22:01:34 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\nodemcuModelo.php(62): CodeIgniter\Database\BaseConnection->query('SELECT TiempoDucha, TiempoEspera, TiempoTolerancia FROM nodemcu WHERE IdNodemcu = \'DE32A7B02A8C\'')
+ 3 APPPATH\Controllers\recibirNodemcu.php(16): App\Models\NodemcuModelo->selectDatos('DE32A7B02A8C')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\RecibirNodemcu->recibirDatos()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\RecibirNodemcu))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
