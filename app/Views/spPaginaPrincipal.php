@@ -62,7 +62,8 @@
         <p class="p-total"><b>Cantidad total de consumo:</b>
             <?php if (isset($consulta2)) {
                 foreach ($consulta2 as $con) {
-                    echo $con->caudal;
+                    $caudal = number_format($con->caudal, 2);
+                    echo $caudal;
                 }
             } else {
                 echo "Aun no hay datos de este dispositivo";

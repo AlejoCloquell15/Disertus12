@@ -72,9 +72,10 @@ th {
                 } else {
                     // Variable para rastrear el IdNodemcu actual
                     foreach ($consulta as $con) {
+                                    $caudal = number_format($con->caudal, 2);
                         echo "<tr>";
                         echo "<td>" . $con->IdNodemcu . "</td>";
-                        echo "<td>" . $con->caudal . "</td>";
+                                    echo "<td>" . $caudal . "</td>";
                         if (isset($con->Fecha)) {
                             echo "<td>" . $con->Fecha . "</td>";
                         } else {
