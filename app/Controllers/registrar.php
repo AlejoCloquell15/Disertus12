@@ -105,7 +105,7 @@ class Registrar extends BaseController
 
                 $currentDateTime = new \DateTime();
 
-                $interval = new \DateInterval('PT30M');
+                $interval = new \DateInterval('PT10M');
                 $currentDateTime->add($interval);
 
                 $fechaAdelantada = $currentDateTime->format('Y-m-d H:i:s');

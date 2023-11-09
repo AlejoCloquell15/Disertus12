@@ -185,7 +185,7 @@
                     console.log('Error al cargar la página: ' + error);
                 }
             });
-        }, 110000000);
+        }, 600000);
     </script>
 </body>
 

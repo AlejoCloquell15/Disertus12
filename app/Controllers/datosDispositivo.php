@@ -3,9 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\nodemcuModelo;
-use App\Models\sessionModelo;
 use App\Controllers\Utils;
-use App\Models\caudalModelo;
 
 
 

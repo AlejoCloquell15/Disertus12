@@ -124,7 +124,7 @@
         <h1>Selecciona Un Dispositivo para trabajar</h1>
         <form action="<?php echo base_url(); ?>/cargarAgregarNodemcu" method="post" class="form-nodemcu">
             <input type="hidden" value="<?php echo $idUser ?>">
-            <button class="boton-agregar">Agregar</button>
+            <button class="boton-agregar">Vincular</button>
         </form>
     </div>
     <div class="container">
@@ -134,20 +134,19 @@
                 echo "<form class='form' action='" . base_url() . "cargarSpConf' method='post'>
                 <input type='hidden' value='" . $res->IdNodemcu . "' name='idUser'>
                 <button class='submit'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v4zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v7zm1-10h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1z'></path></svg>" . $res->Nombre . "</button>
-            </form>"
-                ;
+            </form>";
             }
         }
         ?>
     </div>
     <script type="text/javascript">
-        setTimeout(function () {
+        setTimeout(function() {
             $.ajax({
                 url: '<?php echo base_url('/cargarPp'); ?>',
-                success: function () {
+                success: function() {
                     window.location.href = '<?php echo base_url('/cargarPp'); ?>';
                 },
-                error: function (xhr, status, error) {
+                error: function(xhr, status, error) {
                     console.log('Error al cargar la página: ' + error);
                 }
             });

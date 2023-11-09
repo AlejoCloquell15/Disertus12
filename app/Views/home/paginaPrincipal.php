@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,400&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,400&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <style>
     /* Estilos generales */
@@ -256,7 +255,7 @@
     <div class="bienvenido">
       <h1 class="animate__animated animate__fadeIn">Bienvenido a Disertus</h1>
       <p>Transforma tu experiencia de ducha con nuestra innovadora solución de ahorro de agua.</p>
-      <a href="" class="cta-button">¡Empieza Ahora!</a>
+      <a href="<?php echo base_url(); ?>cargarLogin" class="cta-button">¡Empieza Ahora!</a>
     </div>
   </div>
   </div>
@@ -264,18 +263,22 @@
   <div class="container2">
     <div class="text-cont2">
       <h2 style="text-align: center;">Descubre las Características</h2>
-      <p style="text-align: center;">Aquí tienes algunas de las características destacadas de nuestro innovador sistema
+      <p style="text-align: center;">Aquí tienes algunas de las características destacadas de nuestro innovador
+        sistema
         de
         ducha automática:</p>
       <ul>
-        <li>Ahorro de Agua: Nuestra ducha automática está diseñada para reducir significativamente el consumo de agua,
+        <li>Ahorro de Agua: Nuestra ducha automática está diseñada para reducir significativamente el consumo de
+          agua,
           ayudando a conservar este valioso recurso.</li>
-        <li>Control de Tiempo: Los usuarios pueden configurar la duración de su ducha y el tiempo de espera para una
+        <li>Control de Tiempo: Los usuarios pueden configurar la duración de su ducha y el tiempo de espera para
+          una
           experiencia personalizada.</li>
         <li>Caudalímetro Integrado: Registramos el volumen de agua utilizado, brindándote información útil para
           controlar
           tu consumo y ahorrar dinero.</li>
-        <li>Conciencia Ambiental: Fomentamos la responsabilidad ambiental al reducir el desperdicio de agua y ayudamos a
+        <li>Conciencia Ambiental: Fomentamos la responsabilidad ambiental al reducir el desperdicio de agua y
+          ayudamos a
           preservar el planeta para las generaciones futuras.</li>
       </ul>
     </div>
@@ -289,21 +292,27 @@
     </div>
     <div class="text-cont3">
       <h2 style="text-align: center;">¿Cómo Funciona?</h2>
-      <p style="text-align: center;">El funcionamiento de nuestra ducha automática es sencillo y efectivo. Aquí tienes
+      <p style="text-align: center;">El funcionamiento de nuestra ducha automática es sencillo y efectivo. Aquí
+        tienes
         una
         descripción paso a paso:</p>
       <ol>
-        <li>Detección de Movimiento: Nuestro sistema utiliza un sensor PIR para detectar el movimiento del usuario en la
+        <li>Detección de Movimiento: Nuestro sistema utiliza un sensor PIR para detectar el movimiento del
+          usuario en la
           ducha.</li>
-        <li>Configuración Personalizada: Los usuarios pueden configurar la duración de la ducha y los tiempos de espera
+        <li>Configuración Personalizada: Los usuarios pueden configurar la duración de la ducha y los tiempos de
+          espera
           a
           través de nuestro sitio web.</li>
-        <li>Registro de Caudal: Durante la ducha, un caudalímetro mide el volumen de agua utilizado, proporcionando
+        <li>Registro de Caudal: Durante la ducha, un caudalímetro mide el volumen de agua utilizado,
+          proporcionando
           datos
           precisos.</li>
-        <li>Envío de Datos: Al finalizar la ducha, los datos se envían a nuestro servidor para su registro y análisis.
+        <li>Envío de Datos: Al finalizar la ducha, los datos se envían a nuestro servidor para su registro y
+          análisis.
         </li>
-        <li>Ahorro de Agua: El sistema apaga la ducha según la configuración, lo que reduce el consumo innecesario de
+        <li>Ahorro de Agua: El sistema apaga la ducha según la configuración, lo que reduce el consumo
+          innecesario de
           agua.</li>
       </ol>
     </div>

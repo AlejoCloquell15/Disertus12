@@ -5,7 +5,6 @@ namespace App\Controllers;
 use App\Libraries\Hash;
 use App\Models\loginModelo;
 use App\Models\sessionModelo;
-use CodeIgniter\Email\Email;
 
 class Login extends BaseController
 {
@@ -119,28 +118,6 @@ class Login extends BaseController
 
         return redirect()->route('cargarLogin');
     }
-
-    public function correo()
-    {
-
-        $email = \Config\Services::email();
-
-        $email->setFrom('agustincloquell11@gmail.com', 'ALEJO');
-        $email->setTo('valentinoripanti@alumnos.itr3.edu.ar');
-
-        $email->setSubject('Recuperación de contraseña');
-        $email->setMessage('Haga clic en el siguiente enlace para restablecer su contraseña: ');
-
-        if ($email->send()) {
-            echo 'Email successfully sent';
-        } else {
-            $data = $email->printDebugger(['headers']);
-            print_r($data);
-        }
-        // El correo electrónico se envió exitosamente
-    }
-
-    //Este apartado es para la edicion de datos usuarios
 
     public function editarNombre()
     {
